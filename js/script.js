@@ -1,3 +1,4 @@
+/* SLIDER */
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -19,7 +20,7 @@ function showDivs(n) {
   }
   x[slideIndex - 1].style.display = "block";
 };
-
+/* PIE CHART DASHBOARD */
 new Chart(document.getElementById("pie-chart"), {
   type: 'pie',
   data: {

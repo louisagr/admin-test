@@ -20,7 +20,7 @@ body {
       font-size: 16px;
 }
 .item2 {
-    grid-column: 3 / 8;
+    grid-column: 3 / 9;
     background: rgba(0, 0, 0, 0.3);
 }
 .item2 h1 {
@@ -73,12 +73,10 @@ body {
 
 }
 .item9 {
-    grid-column: 3 / 8;
+    grid-column: 4 / 8;
     grid-row: 5 / 6;
-    background: grey;
-    background: rgba(0, 0, 0, 0.3);
 }
-.item9 p {
-    color: #fff;
-    text-align: center;
+.item10 {
+    grid-column: 8 / 8;
+    grid-row: 2 / 5;
 }
