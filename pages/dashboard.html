@@ -1,39 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <title>Dashboard - Formation Vidéo</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="item item1">
-        <div class="w3-sidebar w3-bar-block w3-grey" style="width:100px">
-          <h3 class="w3-bar-item">Menu</h3>
-          <a href="#" class="w3-bar-item w3-button">Compte</a>
-          <a href="#" class="w3-bar-item w3-button">Cours</a>
-          <a href="#" class="w3-bar-item w3-button">Vidéos</a>
-        </div>
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Dashboard - Formation Vidéo</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item1">
+      <div class="w3-sidebar w3-bar-block w3-grey" style="width:100px">
+        <h3 class="w3-bar-item">Menu</h3>
+        <a href="../index.html" class="w3-bar-item w3-button">Compte</a>
+        <a href="#" class="w3-bar-item w3-button">Cours</a>
+        <a href="#" class="w3-bar-item w3-button">Vidéos</a>
       </div>
-      <div class="item item2"></div>
-      <div class="item item3"></div>
-      <div class="item item4">
-          <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
-            <div class="w3-green w3-center w3-round-xxlarge" style="height:50px;width:70%">70%</div>
-          </div>
-          <a href="#">Apprendre HTML5</a>
-      </div>
-      <div class="item item5">
-        <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
-          <div class="w3-deep-orange w3-center w3-round-xxlarge" style="height:50px;width:30%">30%</div>
-        </div>
-        <a href="#">Apprendre JS</a>
-      </div>
-      <div class="item item6"><p>ChartJS</p></div>
-      <div class="item item7"></div>
+
     </div>
-  </body>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4">
+      <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
+        <div class="w3-green w3-center w3-round-xxlarge" style="height:50px;width:70%">70%</div>
+      </div>
+      <a href="#">Apprendre HTML5</a>
+    </div>
+    <div class="item item5">
+      <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
+        <div class="w3-deep-orange w3-center w3-round-xxlarge" style="height:50px;width:30%">30%</div>
+      </div>
+      <a href="#">Apprendre JS</a>
+    </div>
+    <div class="item item6">
+      <canvas id="pie-chart" width="600px" height="400px"></canvas>
+    </div>
+    <div class="item item7">
+      <div class="w3-content w3-display-container">
+        <img class="slider" src="../img/cours1.jpg" width="100%">
+        <img class="slider" src="../img/cours2.jpg" width="100%">
+        <img class="slider" src="../img/cours3.jpg" width="100%">
+        <button class="w3-button w3-display-left w3-grey" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-grey" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+    </div>
+    <div class="item item8 w3-container">
+      <h2>Test Table</h2>
+      <table class="w3-table-all w3-hoverable">
+        <thead>
+          <tr class="w3-grey">
+            <th>Pif</th>
+            <th>Paf</th>
+            <th>Pouf</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Blabla</td>
+          <td>Blibli</td>
+          <td>Bloublou</td>
+        </tr>
+        <tr>
+          <td>Blabla</td>
+          <td>Blibli</td>
+          <td>Bloublou</td>
+        </tr>
+        <tr>
+          <td>Blabla</td>
+          <td>Blibli</td>
+          <td>Bloublou</td>
+        </tr>
+        <tr>
+          <td>Blabla</td>
+          <td>Blibli</td>
+          <td>Bloublou</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
 </html>
