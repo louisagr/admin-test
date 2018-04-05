@@ -26,7 +26,7 @@ new Chart(document.getElementById("pie-chart"), {
   data: {
     labels: ["JS", "HTML", "CSS", "PHP"],
     datasets: [{
-      label: "Population (millions)",
+      label: "Progression (%)",
       backgroundColor: ["#ffd633", "#1aa3ff", "#990000", "#00b33c"],
       data: [15, 40, 35, 10]
     }]
@@ -34,7 +34,40 @@ new Chart(document.getElementById("pie-chart"), {
   options: {
     title: {
       display: true,
-      text: "Compétences Web maîtrisées en 2018"
+      text: "Temps consacré aux compétences Web en 2018"
     }
   }
+});
+/* RADAR CHART DASHBOARD */
+new Chart(document.getElementById("radar-chart"), {
+    type: 'radar',
+    data: {
+      labels: ["HTML", "CSS", "JS", "JAVA", "PHP"],
+      datasets: [
+        {
+          label: "2017",
+          fill: true,
+          backgroundColor: "rgba(179,181,198,0.5)",
+          borderColor: "rgba(179,181,198,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(179,181,198,1)",
+          data: [20,35.61,21.69,15.62,8.82]
+        }, {
+          label: "2018",
+          fill: true,
+          backgroundColor: "rgba(255,99,132,0.5)",
+          borderColor: "rgba(255,99,132,1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(255,99,132,1)",
+          pointBorderColor: "#fff",
+          data: [55.48,54.16,27.61,20.06,15.45]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Compétences Web acquises 2017/2018 (degré de progression)"
+      }
+    }
 });
