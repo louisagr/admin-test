@@ -76,4 +76,9 @@ body {
     grid-column: 3 / 8;
     grid-row: 5 / 6;
     background: grey;
+    background: rgba(0, 0, 0, 0.3);
+}
+.item9 p {
+    color: #fff;
+    text-align: center;
 }

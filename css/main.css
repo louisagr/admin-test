@@ -6,9 +6,20 @@ body {
     background-repeat: no-repeat;
     font-family: sans-serif;
 }
+/* Page de connexion */
+.titre {
+    font-size: 50px;
+    padding-top: 75px;
+    font-family: 'Syncopate', sans-serif;
+}
+h3 {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+}
 .login-box {
     width: 320px;
-    height: 420px;
+    height: auto;
     background: rgba(0, 0, 0, 0.3);
     color: #fff;
     top: 50%;
