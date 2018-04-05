@@ -14,8 +14,6 @@ body {
     grid-template-rows: repeat(4, 200px) 400px;
     grid-gap: 1rem;
 }
-.item {
-}
 .item1 {
     grid-row: 1 / 5;
 }
@@ -89,6 +87,6 @@ body {
     grid-column: 2 / 4;
 }
 .item8 {
-  grid-row: 3 / 5;
+    grid-row: 3 / 5;
 }
 /* SIDEBAR */
