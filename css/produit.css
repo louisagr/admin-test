@@ -8,7 +8,7 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 100px repeat(2, 75px) repeat(3, 200px) 75px 400px;
+    grid-template-columns: 200px repeat(2, 75px) repeat(3, 200px) 75px 400px;
     grid-template-rows: 250px 50px repeat(2, 200px) 600px;
     grid-gap: 1rem;
 }
@@ -85,6 +85,6 @@ body {
     grid-row: 5 / 6;
 }
 .item10 {
-    grid-column: 8 / 8;
+    grid-column: 7 / 9;
     grid-row: 3 / 5;
 }

@@ -47,18 +47,18 @@ new Chart(document.getElementById("radar-chart"), {
         {
           label: "2017",
           fill: true,
-          backgroundColor: "rgba(179,181,198,0.5)",
-          borderColor: "rgba(179,181,198,1)",
+          backgroundColor: "rgba(63,136,191,0.5)",
+          borderColor: "rgba(63,136,191,1)",
           pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(179,181,198,1)",
+          pointBackgroundColor: "rgba(63,136,191,1)",
           data: [20,35.61,21.69,15.62,8.82]
         }, {
           label: "2018",
           fill: true,
-          backgroundColor: "rgba(255,99,132,0.5)",
-          borderColor: "rgba(255,99,132,1)",
+          backgroundColor: "rgba(63,191,127,0.5)",
+          borderColor: "rgba(63,191,127,1)",
           pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(255,99,132,1)",
+          pointBackgroundColor: "rgba(63,191,127,1)",
           pointBorderColor: "#fff",
           data: [55.48,54.16,27.61,20.06,15.45]
         }
