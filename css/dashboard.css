@@ -1,96 +1,117 @@
 /* GENERAL */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 body {
-    margin: 0;
-    padding: 0;
-    background: url(../img/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /* GRID */
 .container {
-    display: grid;
-    grid-template-columns: 200px 300px 300px 600px ;
-    grid-template-rows: repeat(5, 200px) 500px;
-    grid-gap: 1rem;
-}
-.item1 {
-    grid-row: 1 / 5;
-}
-.item1 a {
-    color: #fff;
-    font-size: 16px;
-}
-.item2 {
-    border-radius: 20%;
-    background: url(../img/html5.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.item3 {
-    border-radius: 20%;
-    background: url(../img/js.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-.item4 {
-    grid-column: 2 / 3;
-}
-.item4 a {
-    color: #fff;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 50px;
-    background: black;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: grid;
-    margin-top: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.item4 a:hover {
-    background: #fff;
-    color: black;
-}
-.item5 {
-    grid-column: 3 / 4;
-}
-.item5 a {
-    color: #fff;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 50px;
-    background: black;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: grid;
-    margin-top: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.item5 a:hover {
-    background: #fff;
-    color: black;
-}
-.item6 {
-    grid-row: 1 / 3;
-    grid-column: 4 / 5;
-    max-width: 600px;
-}
-.item7 {
-    grid-row: 5 / 5;
-    grid-column: 2 / 5;
-}
-.item8 {
-    grid-row: 3 / 5;
-}
-.item9 {
-    grid-row: 3 / 3;
-    grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 200px 300px 300px 600px;
+  grid-template-rows: repeat(5, 200px) 500px;
+  grid-gap: 1rem;
 }
 /* SIDEBAR */
+.item1 {
+  grid-row: 1 / 5;
+}
+.item1 a {
+  color: #fff;
+  font-size: 16px;
+}
+/* PROGRESSION HTML JS */
+.item2 {
+  border-top: 2px dashed black;
+  border-left: 2px dashed black;
+  background: url(../img/html5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item3 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  background: url(../img/js.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.item4 {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  grid-column: 2 / 3;
+}
+.item4 a {
+  color: #fff;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  background: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: grid;
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.item4 a:hover {
+  background: #fff;
+  color: black;
+}
+.item5 {
+  border-bottom: 2px dashed black;
+  border-right: 2px dashed black;
+  grid-column: 3 / 4;
+}
+.item5 a {
+  color: #fff;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50px;
+  background: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: grid;
+  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.item5 a:hover {
+  background: #fff;
+  color: black;
+}
+/* PIE CHART */
+.item6 {
+  grid-row: 1 / 3;
+  grid-column: 4 / 5;
+  max-width: 600px;
+  border-top: 2px solid black;
+  border-bottom: 2px dashed black;
+  border-left: 2px dashed black;
+  border-right: 2px solid black;
+}
+/* SLIDER */
+.item7 {
+  grid-row: 5 / 5;
+  grid-column: 2 / 5;
+}
+/* TABLEAU DE BORD */
+.item8 {
+  grid-row: 3 / 5;
+  border-left: 2px dashed black;
+  border-right: 2px solid black;
+  border-top: 2px dashed black;
+  border-bottom: 2px solid black;
+}
+/* RADAR CHART */
+.item9 {
+  grid-row: 3 / 3;
+  grid-column: 2 / 4;
+}

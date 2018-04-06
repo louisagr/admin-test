@@ -40,34 +40,32 @@ new Chart(document.getElementById("pie-chart"), {
 });
 /* RADAR CHART DASHBOARD */
 new Chart(document.getElementById("radar-chart"), {
-    type: 'radar',
-    data: {
-      labels: ["HTML", "CSS", "JS", "JAVA", "PHP"],
-      datasets: [
-        {
-          label: "2017",
-          fill: true,
-          backgroundColor: "rgba(63,136,191,0.5)",
-          borderColor: "rgba(63,136,191,1)",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(63,136,191,1)",
-          data: [20,35.61,21.69,15.62,8.82]
-        }, {
-          label: "2018",
-          fill: true,
-          backgroundColor: "rgba(63,191,127,0.5)",
-          borderColor: "rgba(63,191,127,1)",
-          pointBorderColor: "#fff",
-          pointBackgroundColor: "rgba(63,191,127,1)",
-          pointBorderColor: "#fff",
-          data: [55.48,54.16,27.61,20.06,15.45]
-        }
-      ]
-    },
-    options: {
-      title: {
-        display: true,
-        text: "Compétences Web acquises 2017/2018 (degré de progression)"
-      }
+  type: 'radar',
+  data: {
+    labels: ["HTML", "CSS", "JS", "JAVA", "PHP"],
+    datasets: [{
+      label: "2017",
+      fill: true,
+      backgroundColor: "rgba(63,136,191,0.5)",
+      borderColor: "rgba(63,136,191,1)",
+      pointBorderColor: "#fff",
+      pointBackgroundColor: "rgba(63,136,191,1)",
+      data: [20, 35.61, 21.69, 15.62, 8.82]
+    }, {
+      label: "2018",
+      fill: true,
+      backgroundColor: "rgba(63,191,127,0.5)",
+      borderColor: "rgba(63,191,127,1)",
+      pointBorderColor: "#fff",
+      pointBackgroundColor: "rgba(63,191,127,1)",
+      pointBorderColor: "#fff",
+      data: [55.48, 54.16, 27.61, 20.06, 15.45]
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Compétences Web acquises 2017/2018 (degré de progression)"
     }
+  }
 });

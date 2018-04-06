@@ -3,100 +3,114 @@
 
 <head>
   <meta charset="utf-8">
+<!-- STYLESHEETS -->
   <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <title>Dashboard - Formation Vidéo</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="item item1">
-      <div class="w3-sidebar w3-bar-block w3-grey w3-opacity-min" style="width:100px">
-        <h3 class="w3-bar-item">Menu</h3>
-        <a href="../index.html" class="w3-bar-item w3-button">Page<br>d'accueil</a>
-        <a href="produit.html" class="w3-bar-item w3-button">Vidéos</a>
+  <div style="overflow: auto">
+    <div class="container">
+<!-- SIDEBAR -->
+      <div class="item item1">
+        <div class="w3-sidebar w3-bar-block w3-grey w3-opacity-min" style="width:100px">
+          <h3 class="w3-bar-item">Menu</h3>
+          <a href="../index.html" class="w3-bar-item w3-button">Page<br>d'accueil</a>
+          <a href="produit.html" class="w3-bar-item w3-button">Vidéos</a>
+        </div>
       </div>
-    </div>
-    <div class="item item2"></div>
-    <div class="item item3"></div>
-    <div class="item item4">
-      <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
-        <div class="w3-green w3-center w3-round-xxlarge" style="height:50px;width:70%">70%</div>
+<!-- LOGO HTML JS -->
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+<!-- PROGRESSION HTML -->
+      <div class="item item4">
+        <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
+          <div class="w3-green w3-center w3-round-xxlarge" style="height:50px;width:70%">70%</div>
+        </div>
+        <a href="produit.html">Apprendre HTML5</a>
       </div>
-      <a href="produit.html">Apprendre HTML5</a>
-    </div>
-    <div class="item item5">
-      <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
-        <div class="w3-deep-orange w3-center w3-round-xxlarge" style="height:50px;width:30%">30%</div>
+<!-- PROGRESSION JS -->
+      <div class="item item5">
+        <div class="animated zoomIn w3-grey w3-round-xxlarge w3-xxlarge">
+          <div class="w3-deep-orange w3-center w3-round-xxlarge" style="height:50px;width:30%">30%</div>
+        </div>
+        <a href="produit.html">Apprendre JS</a>
       </div>
-      <a href="produit.html">Apprendre JS</a>
-    </div>
-    <div class="item item6">
-      <canvas id="pie-chart" width="600px" height="400px"></canvas>
-    </div>
-    <div class="item item7">
-      <div class="w3-content w3-display-container">
-        <img class="slider" src="../img/cours1.jpg" width="100%">
-        <img class="slider" src="../img/cours2.jpg" width="100%">
-        <img class="slider" src="../img/cours3.jpg" width="100%">
-        <button class="w3-button w3-display-left w3-grey" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right w3-grey" onclick="plusDivs(+1)">&#10095;</button>
+<!-- PIE CHARTJS -->
+      <div class="item item6">
+        <canvas id="pie-chart" width="600" height="400"></canvas>
       </div>
-    </div>
-    <div class="item item8 w3-container">
-      <h2>Tableau de bord</h2>
-      <table class="w3-table-all w3-hoverable">
-        <thead>
-          <tr class="w3-grey">
-            <th>Langage</th>
-            <th>Avancée</th>
-            <th>Niveau</th>
+<!-- SLIDER W3.CSS -->
+      <div class="item item7">
+        <div class="w3-content w3-display-container">
+          <img class="slider" src="../img/cours1.jpg" width="100%" alt="cours1">
+          <img class="slider" src="../img/cours2.jpg" width="100%" alt="cours2">
+          <img class="slider" src="../img/cours3.jpg" width="100%" alt="cours3">
+          <button class="w3-button w3-display-left w3-grey" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right w3-grey" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+      </div>
+<!-- TABLEAU W3.CSS -->
+      <div class="item item8 w3-container">
+        <h2>Tableau de bord</h2>
+        <table class="w3-table-all w3-hoverable">
+          <thead>
+            <tr class="w3-grey">
+              <th>Langage</th>
+              <th>Avancée</th>
+              <th>Niveau</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>HTML</td>
+            <td>70%</td>
+            <td>Moyen</td>
           </tr>
-        </thead>
-        <tr>
-          <td>HTML</td>
-          <td>70%</td>
-          <td>Moyen</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>65%</td>
-          <td>Moyen</td>
-        </tr>
-        <tr>
-          <td>JS</td>
-          <td>30%</td>
-          <td>Débutant</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>0%</td>
-          <td>Débutant</td>
-        </tr>
-        <tr>
-          <td>PHP</td>
-          <td>0%</td>
-          <td>Débutant</td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>0%</td>
-          <td>Débutant</td>
-        </tr>
-        <tr>
-          <td>React Native</td>
-          <td>0%</td>
-          <td>Débutant</td>
-        </tr>
-      </table>
-    </div>
-    <div class="item item9">
-      <canvas id="radar-chart" width="600" height="400"></canvas>
+          <tr>
+            <td>CSS</td>
+            <td>65%</td>
+            <td>Moyen</td>
+          </tr>
+          <tr>
+            <td>JS</td>
+            <td>30%</td>
+            <td>Débutant</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>0%</td>
+            <td>Débutant</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>0%</td>
+            <td>Débutant</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>0%</td>
+            <td>Débutant</td>
+          </tr>
+          <tr>
+            <td>React Native</td>
+            <td>0%</td>
+            <td>Débutant</td>
+          </tr>
+        </table>
+      </div>
+<!-- RADAR CHARTJS -->
+      <div class="item item9">
+        <canvas id="radar-chart" width="600" height="400"></canvas>
+      </div>
     </div>
   </div>
 </body>
+
+<!-- JAVASCRIPT -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
-<script type="text/javascript" src="../js/script.js"></script>
+<script src="../js/script.js"></script>
 
 </html>
